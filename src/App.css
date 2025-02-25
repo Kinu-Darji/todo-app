@@ -1,38 +1,98 @@
-.App {
+.main{
+  background-color: aliceblue;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.center{
+  width: 25%;
+  height: 80vh;
+  background-color: rgba(33, 230, 230, 0.692);
+  box-shadow: 5px 5px 25px rgba(0,0,0,0.5);
+  border-radius: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.h1{
   color: white;
+  background: transparent;
+  background-color: rgba(211, 153, 81, 0.74);
+  padding: 6px 0 2px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
 }
 
-.App-link {
-  color: #61dafb;
+.ol{
+  list-style: none;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button{
+  min-height: 40px;
+  width: 40px;
+  color: rgba(236, 36, 36, 0.815);
+  border-radius: 50%;
+  border: none;
+  border-color: aquamarine;
+  font-size: 40px;
+  border: none;
+  margin-left: 10px;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.input{
+  text-align: center;
+  height: 30px;
+  top:10px;
+  border: none;
+  background:transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width: 60%;
+  border-bottom: 2px solid plum;
+  outline:none
+}
+
+.error{
+  color:red;
+  font-size: 25px;
+}
+
+.icon{
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.trash{
+  color: red;
+}
+
+.edit{
+  color: blue;
+}
+
+.checked{
+  color: green;
+}
+
+.todo-item{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  background: white;
+  border-radius: 5px;
+  margin: 5px ;
+  border: 1px solid gainsboro;
+}
+
+.checked{
+  text-decoration: line-through;
+  color: darkgray;
+  
 }
